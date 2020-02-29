@@ -19,10 +19,7 @@ public class EngineAirTransport extends AirTransport {
 
     @Override
     public String toString() {
-        return "EngineAirTransport{" +
-                "type='" + getType() + '\'' +
-                "sideNumber='" + getSideNumber() + '\'' +
-                "enginePower=" + enginePower +
-                '}';
+        return super.toString() +
+                "\n\tenginePower: " + enginePower + ",";
     }
 }

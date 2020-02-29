@@ -19,10 +19,8 @@ public class Glider extends AirTransport {
 
      @Override
      public String toString() {
-          return "Glider{" +
-                  "type='" + getType() + '\'' +
-                  "sideNumber='" + getSideNumber() + '\'' +
-                  "planningRange=" + planningRange +
-                  '}';
+          return super.toString() +
+                  "\n\tplanningRange: " + planningRange +
+                  "\n}";
      }
 }

@@ -19,9 +19,7 @@ public class WaterTransport extends Transport {
 
     @Override
     public String toString() {
-        return "WaterTransport{" +
-                "type='" + getType() + '\'' +
-                "subType='" + subType + '\'' +
-                "}";
+        return super.toString() +
+                "\n\tsubType: \"" + subType + "\",";
     }
 }

@@ -17,13 +17,20 @@ public class Airplane extends EngineAirTransport {
         this.takeOffMode = takeOffMode;
     }
 
-    @Override
+    /*@Override
     public String toString() {
         return "Airplane{" +
                 "type='" + getType() + '\'' +
                 "sideNumber='" + getSideNumber() + '\'' +
-                "enginePower=" + getEnginePower() +
+                "enginePower=" + getEnginePower() + '\'' +
                 "takeOffMode='" + takeOffMode + '\'' +
                 '}';
+    }*/
+
+    @Override
+    public String toString() {
+        return super.toString()
+                + "\n\ttakeOffMode: \"" + takeOffMode + "\"\n" +
+                "}";
     }
 }

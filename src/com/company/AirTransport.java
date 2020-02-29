@@ -19,9 +19,7 @@ public class AirTransport extends Transport {
 
     @Override
     public String toString() {
-        return "AirTransport{" +
-                "type='" + getType() + '\'' +
-                "sideNumber='" + sideNumber + '\'' +
-                '}';
+        return super.toString() +
+                "\n\tsideNumber: \"" + sideNumber + "\",";
     }
 }

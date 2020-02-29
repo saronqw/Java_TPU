@@ -1,6 +1,6 @@
 package com.company;
 
-public class Transport {
+public abstract class Transport {
 
     public Transport(String type) {
         this.type = type;
@@ -18,8 +18,7 @@ public class Transport {
 
     @Override
     public String toString() {
-        return "Transport{" +
-                "type='" + type + '\'' +
-                '}';
+        return getClass().getSimpleName() + "\n{\n" +
+                "\ttype: \"" + type + "\",";
     }
 }
