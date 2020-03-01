@@ -20,7 +20,6 @@ public class Helicopter extends EngineAirTransport {
     @Override
     public String toString() {
         return super.toString() +
-                "\n\tscrewDiameter: " + screwDiameter +
-                "\n}";
+                "\n\tscrewDiameter: " + screwDiameter;
     }
 }

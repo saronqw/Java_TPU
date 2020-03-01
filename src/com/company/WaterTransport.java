@@ -20,6 +20,6 @@ public class WaterTransport extends Transport {
     @Override
     public String toString() {
         return super.toString() +
-                "\n\tsubType: \"" + subType + "\",";
+                "\n\tsubType: \"" + subType + "\"";
     }
 }

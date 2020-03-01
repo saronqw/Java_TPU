@@ -20,6 +20,6 @@ public class EngineAirTransport extends AirTransport {
     @Override
     public String toString() {
         return super.toString() +
-                "\n\tenginePower: " + enginePower + ",";
+                "\n\tenginePower: " + enginePower;
     }
 }

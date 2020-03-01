@@ -20,6 +20,6 @@ public class AirTransport extends Transport {
     @Override
     public String toString() {
         return super.toString() +
-                "\n\tsideNumber: \"" + sideNumber + "\",";
+                "\n\tsideNumber: \"" + sideNumber + "\"";
     }
 }

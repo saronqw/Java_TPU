@@ -30,7 +30,6 @@ public class Airplane extends EngineAirTransport {
     @Override
     public String toString() {
         return super.toString()
-                + "\n\ttakeOffMode: \"" + takeOffMode + "\"\n" +
-                "}";
+                + "\n\ttakeOffMode: \"" + takeOffMode + "\"";
     }
 }

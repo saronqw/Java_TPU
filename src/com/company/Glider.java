@@ -20,7 +20,6 @@ public class Glider extends AirTransport {
      @Override
      public String toString() {
           return super.toString() +
-                  "\n\tplanningRange: " + planningRange +
-                  "\n}";
+                  "\n\tplanningRange: " + planningRange;
      }
 }

@@ -18,7 +18,7 @@ public abstract class Transport {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + "\n{\n" +
-                "\ttype: \"" + type + "\",";
+        return getClass().getSimpleName() + "\n" +
+                "\ttype: \"" + type + "\"";
     }
 }
