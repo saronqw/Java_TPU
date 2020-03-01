@@ -65,15 +65,13 @@ public class Factory {
             wait();
         }
 
-        //if (countFullness.intValue() < CAPACITY) {
-            Thread.sleep(500);
-            notifyAll();
-            if (!transports.isEmpty()) {
-                out.println("\nGrab one " + transports.get(countFullness.intValue() - 1).toString());
-                transports.remove(countFullness.intValue() - 1);
-                countFullness.decrementAndGet();
-            }
-        //}
+        Thread.sleep(500);
+        notifyAll();
+        if (!transports.isEmpty()) {
+            out.println("\nGrab one " + transports.get(countFullness.intValue() - 1).toString());
+            transports.remove(countFullness.intValue() - 1);
+            countFullness.decrementAndGet();
+        }
     }
 
     public Transport generateTransport() {
