@@ -78,25 +78,19 @@ public class Factory {
 
         Transport transport = null;
         Random random = new Random();
-        int field = random.nextInt(6);
+        int field = random.nextInt(4);
 
         switch (field) {
             case 0:
                 transport = new Airplane("H2000", 120, "vertical");
                 break;
             case 1:
-                transport = new AirTransport("H2000");
-                break;
-            case 2:
-                transport = new EngineAirTransport("H2000", 120);
-                break;
-            case 3:
                 transport = new Glider("H2000", 23);
                 break;
-            case 4:
+            case 2:
                 transport = new Helicopter("H2000", 120, 5);
                 break;
-            case 5:
+            case 3:
                 transport = new WaterTransport("H2000");
                 break;
             default:
