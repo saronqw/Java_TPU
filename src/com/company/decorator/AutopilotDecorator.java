@@ -3,7 +3,6 @@ package com.company.decorator;
 import com.company.Transport;
 
 public class AutopilotDecorator extends FeatureDecorator {
-    Transport transport;
 
     public AutopilotDecorator(Transport transport){
         this.transport = transport;
@@ -14,6 +13,7 @@ public class AutopilotDecorator extends FeatureDecorator {
         return transport.showInfo() + " Autopilot";
     }
 
+    @Override
     public int getCost(){
         return 65_000 + transport.getCost();
     }
