@@ -1,8 +1,8 @@
 package com.company;
 
-public class Main {
+public class MainFactory {
 
     public static void main(String[] args) {
-       new Factory(4, 2);
+        new Factory(4, 2);
     }
 }
