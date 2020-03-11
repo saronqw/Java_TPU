@@ -3,7 +3,7 @@ package com.company;
 public class WaterTransport extends Transport {
 
     public WaterTransport(String subType) {
-        super("Water");
+        setType("Water");
         this.subType = subType;
     }
 
@@ -18,8 +18,8 @@ public class WaterTransport extends Transport {
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                "\n\tsubType: \"" + subType + "\"";
+    public String showInfo() {
+        return super.showInfo() +
+                ", subType = " + subType;
     }
 }

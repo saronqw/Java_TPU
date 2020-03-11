@@ -1,9 +1,9 @@
 package com.company;
 
-public class AirTransport extends Transport {
+public abstract class AirTransport extends Transport {
 
     public AirTransport(String sideNumber) {
-        super("Air");
+        setType("Air");
         this.sideNumber = sideNumber;
     }
 
@@ -18,8 +18,8 @@ public class AirTransport extends Transport {
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                "\n\tsideNumber: \"" + sideNumber + "\"";
+    public String showInfo() {
+        return super.showInfo() +
+                ", sideNumber = " + sideNumber;
     }
 }

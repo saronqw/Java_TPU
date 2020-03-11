@@ -1,6 +1,6 @@
 package com.company;
 
-public class EngineAirTransport extends AirTransport {
+public abstract class EngineAirTransport extends AirTransport {
 
     EngineAirTransport(String sideNumber, int enginePower) {
         super(sideNumber);
@@ -18,8 +18,9 @@ public class EngineAirTransport extends AirTransport {
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                "\n\tenginePower: " + enginePower;
+    public String showInfo() {
+        return super.showInfo() +
+                ", sideNumber = " + getSideNumber() +
+                ", enginePower = " + enginePower;
     }
 }

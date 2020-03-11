@@ -2,11 +2,8 @@ package com.company;
 
 public abstract class Transport {
 
-    public Transport(String type) {
-        this.type = type;
-    }
-
     private String type;
+    private int cost;
 
     public String getType() {
         return type;
@@ -16,9 +13,15 @@ public abstract class Transport {
         this.type = type;
     }
 
-    @Override
-    public String toString() {
-        return getClass().getSimpleName() + "\n" +
-                "\ttype: \"" + type + "\"";
+    public int getCost() {
+        return cost;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+
+    public String showInfo(){
+        return "Type: " + type;
     }
 }

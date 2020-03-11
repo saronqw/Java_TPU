@@ -18,8 +18,10 @@ public class Helicopter extends EngineAirTransport {
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                "\n\tscrewDiameter: " + screwDiameter;
+    public String showInfo() {
+        return super.showInfo() +
+                ", sideNumber = " + getSideNumber() +
+                ", enginePower = " + getEnginePower() +
+                ", screwDiameter = " + screwDiameter;
     }
 }
