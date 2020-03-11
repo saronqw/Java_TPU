@@ -2,6 +2,8 @@ package com.company;
 
 public class WaterTransport extends Transport {
 
+    public WaterTransport() {}
+
     public WaterTransport(String subType) {
         setType("Water");
         this.subType = subType;

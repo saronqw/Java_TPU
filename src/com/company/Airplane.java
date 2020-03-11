@@ -2,7 +2,9 @@ package com.company;
 
 public class Airplane extends EngineAirTransport {
 
-    Airplane(String sideNumber, int enginePower, String takeOffMode) {
+    public Airplane() { }
+
+    public Airplane(String sideNumber, int enginePower, String takeOffMode) {
         super(sideNumber, enginePower);
         this.takeOffMode = takeOffMode;
     }

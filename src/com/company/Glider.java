@@ -2,6 +2,8 @@ package com.company;
 
 public class Glider extends AirTransport {
 
+     public Glider() {}
+
      public Glider(String sideNumber, int planningRange) {
           super(sideNumber);
           this.planningRange = planningRange;

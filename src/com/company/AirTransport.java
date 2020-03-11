@@ -2,6 +2,8 @@ package com.company;
 
 public abstract class AirTransport extends Transport {
 
+    public AirTransport() {}
+
     public AirTransport(String sideNumber) {
         setType("Air");
         this.sideNumber = sideNumber;

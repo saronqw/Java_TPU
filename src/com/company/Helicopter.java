@@ -2,6 +2,8 @@ package com.company;
 
 public class Helicopter extends EngineAirTransport {
 
+    public Helicopter() {}
+
     Helicopter(String sideNumber, int enginePower, int screwDiameter) {
         super(sideNumber, enginePower);
         this.screwDiameter = screwDiameter;

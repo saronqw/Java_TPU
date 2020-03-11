@@ -2,6 +2,8 @@ package com.company;
 
 public abstract class Transport {
 
+    public Transport() {}
+
     private String type;
     private int cost;
 

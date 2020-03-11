@@ -2,6 +2,8 @@ package com.company;
 
 public abstract class EngineAirTransport extends AirTransport {
 
+    public EngineAirTransport() {}
+
     EngineAirTransport(String sideNumber, int enginePower) {
         super(sideNumber);
         this.enginePower = enginePower;
