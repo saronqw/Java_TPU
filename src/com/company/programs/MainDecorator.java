@@ -1,5 +1,7 @@
-package com.company;
+package com.company.programs;
 
+import com.company.Airplane;
+import com.company.Transport;
 import com.company.decorator.AutopilotDecorator;
 import com.company.decorator.FeatureDecorator;
 import com.company.decorator.SecondDriverDecorator;
