@@ -1,6 +1,8 @@
 package com.company;
 
 import com.company.decorator.AutopilotDecorator;
+import com.company.decorator.FeatureDecorator;
+import com.company.decorator.SecondDriverDecorator;
 
 public class MainDecorator {
     public static void main(String[] args) {
@@ -10,6 +12,17 @@ public class MainDecorator {
 
         airplane = new AutopilotDecorator(airplane);
         System.out.println(airplane.showInfo() + " " + airplane.getCost());
-    }
 
+        airplane = new SecondDriverDecorator(airplane);
+        System.out.println(airplane.showInfo() + " " + airplane.getCost());
+
+        airplane = ((FeatureDecorator) airplane).getTransport();
+        System.out.println(airplane.showInfo() + " " + airplane.getCost());
+
+        airplane = ((FeatureDecorator) airplane).getTransport();
+        System.out.println(airplane.showInfo() + " " + airplane.getCost());
+
+        airplane = ((FeatureDecorator) airplane).getTransport();
+        System.out.println(airplane.showInfo() + " " + airplane.getCost());
+    }
 }
