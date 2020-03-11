@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.lang.System.out;
 
-public class Factory {
+public class FactoryThreads {
 
     public static List<Transport> transports = new ArrayList<>();
     private int countConsume;
@@ -15,7 +15,7 @@ public class Factory {
     private static AtomicInteger countFullness = new AtomicInteger(0);
 
 
-    public Factory(int count, int capacity) {
+    public FactoryThreads(int count, int capacity) {
         this.countConsume = count;
         this.CAPACITY = capacity;
 
