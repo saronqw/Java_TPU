@@ -26,4 +26,6 @@ public abstract class Transport {
     public String showInfo(){
         return "Type: " + type;
     }
+
+    public abstract void assembleTransport();
 }

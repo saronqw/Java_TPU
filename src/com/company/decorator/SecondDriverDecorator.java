@@ -14,6 +14,11 @@ public class SecondDriverDecorator extends FeatureDecorator {
     }
 
     @Override
+    public void assembleTransport() {
+
+    }
+
+    @Override
     public int getCost(){
         return 80_000 + transport.getCost();
     }

@@ -11,6 +11,16 @@ public abstract class EngineAirTransport extends AirTransport {
 
     private int enginePower;
 
+    public String getEngineName() {
+        return engineName;
+    }
+
+    public void setEngineName(String engineName) {
+        this.engineName = engineName;
+    }
+
+    private String engineName;
+
     public int getEnginePower() {
         return enginePower;
     }
@@ -22,7 +32,7 @@ public abstract class EngineAirTransport extends AirTransport {
     @Override
     public String showInfo() {
         return super.showInfo() +
-                ", sideNumber = " + getSideNumber() +
-                ", enginePower = " + enginePower;
+                ", enginePower = " + enginePower +
+                ", engineName = " + engineName;
     }
 }

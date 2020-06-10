@@ -25,4 +25,9 @@ public class Glider extends AirTransport {
                   ", sideNumber = " + getSideNumber() +
                   ", planningRange = " + planningRange;
      }
+
+     @Override
+     public void assembleTransport() {
+
+     }
 }

@@ -24,4 +24,9 @@ public class WaterTransport extends Transport {
         return super.showInfo() +
                 ", subType = " + subType;
     }
+
+    @Override
+    public void assembleTransport() {
+
+    }
 }

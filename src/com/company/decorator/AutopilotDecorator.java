@@ -14,6 +14,11 @@ public class AutopilotDecorator extends FeatureDecorator {
     }
 
     @Override
+    public void assembleTransport() {
+
+    }
+
+    @Override
     public int getCost(){
         return 65_000 + transport.getCost();
     }
